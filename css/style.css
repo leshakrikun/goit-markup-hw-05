@@ -53,10 +53,13 @@
         display: flex;
         align-items: center;
         margin-left: auto;
+      
+     
     }
     .contact:hover,
     .contact:focus {
         color: var(--accent-color);
+        
     }
     .nav-link {
         display: flex;
@@ -69,6 +72,7 @@
         padding-top: 32px;
         padding-bottom: 32px;
         position: relative;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .header {
         display: flex;
@@ -128,6 +132,7 @@
         display: flex;
         padding-top: 32px;
         padding-bottom: 32px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .hero {
         text-transform: uppercase;
@@ -231,7 +236,30 @@
     }
     .work {
         display: block;
+        
     }
+    .list-work-item {
+        position: relative;
+    }
+     .work-type {
+       
+        margin: auto;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 0%;
+        right: 0;
+        width: 100%;
+        height: 70px;
+        line-height: 70px;
+        white-space: nowrap;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: var(--third-background-color);
+        background-color: rgba(47, 48, 58, 0.8);
+}
     .list-work {
         display: flex;
         justify-content: center;
@@ -369,11 +397,15 @@
         text-align: center;
         background-color: var(--team-color);
         border-radius: 4px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .button-filter:hover,
     .button-filter:focus {
         background-color: var(--accent-color);
         color: var(--third-background-color);
+        box-shadow: 0px 4px 4px 0px #000000 25%;
     }
     button {
         outline: none;
@@ -399,7 +431,9 @@
         background: var(--third-background-color);
         margin-left: 30px;
         margin-top: 30px;
-      
+    }
+    .one-work-link {
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .one-work-link:focus,
     .one-work-link:hover {
@@ -495,6 +529,9 @@
   height: 90px;
   background-color: var(--third-background-color);
   color: var(--link-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-square:hover,
 .icon-square:focus {
@@ -531,6 +568,9 @@ color: var(--accent-color);
     color: var(--link-color);
     background-position: center; 
     margin-right: 6px;  
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:last-child {
 margin-right: 0;
