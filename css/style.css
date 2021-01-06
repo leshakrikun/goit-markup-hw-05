@@ -690,4 +690,5 @@ footer .social-link:focus {
     border: 1px solid rgba(0,0,0,0.2); 
     background-color: var(--third-background-color);
     color: var(--icon-color);
+    cursor: pointer;
 }
